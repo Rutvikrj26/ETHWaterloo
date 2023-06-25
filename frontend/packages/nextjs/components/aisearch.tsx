@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import type { NextPage } from "next";
+import { MetaHeader } from "@components/MetaHeader";
 
 const AiSearch = () => {
   const [search_query, setSearchQuery] = useState("");

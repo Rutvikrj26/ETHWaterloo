@@ -183,7 +183,7 @@ def search(query_text):
     # Creating a new instance of the Searcher class
     searcher = Searcher(collection_name="Noun")
 
-    # Searching for the closest vectors to the word "cat"
-    search_result = searcher.search(text="black")    
+    # Searching for the closest vectors to the search_query
+    search_result = searcher.search(text=query_text)
 
     return json.dumps(search_result, indent=4, sort_keys=True)
