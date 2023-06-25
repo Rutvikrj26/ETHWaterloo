@@ -42,12 +42,12 @@ const AiFetch = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("/api/ai_query", {
+      const res = await fetch("/api/ai_search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ char_address, token_id }),
+        body: JSON.stringify({ search_query }),
       });
       const data = await res.json();
       console.log(data);
